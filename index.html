@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Checklist</title>
+
+</head>
+<body>
+    
+<h1>LISTA DE TAREFAS</h1>
+
+<div class="tabelas">
+    <form name="form_main" id="form">
+        <label for="task">
+            Nova tarefa: 
+        </label> 
+        <input type="text" name="task" id="task"/> 
+        <br/>
+        <button type="button" class="button-add" onclick="novaTarefa()">
+            Adicionar
+        </button>
+        <button type="button" class="button-add" onclick="reiniciarLista()">
+            Reiniciar lista
+        </button>
+        <br>
+        <label for="list">
+            Renomear lista: 
+        </label> 
+        <input type="text" name="list" id="list" size="15"/> 
+        <br>
+        <button type="button" id="button-rename" onclick="renomearLista()">
+            Renomear
+        </button>
+        <br>
+        <br>
+        <img src="img/on.png" class="dark-mode" id="dark" onclick="darkMode()">
+        <img src="img/off.png" class="dark-mode" id="light" onclick="lightMode()" hidden="none">
+      </form> 
+      <div id="tabela-tarefa">
+      <h2>
+          Tarefas :
+      </h2>
+          <ul>
+          </ul>
+
+          <div id="aspiral-pai">
+            <div class="aspiral"><h5>.</h5></div>
+            <br>
+            <div class="aspiral"><h5>.</h5></div>
+            <br>
+            <div class="aspiral"><h5>.</h5></div>
+            <br>
+            <div class="aspiral"><h5>.</h5></div>
+            <br>
+            <div class="aspiral"><h5>.</h5></div>
+            <br>
+            <div class="aspiral"><h5>.</h5></div>
+            <br>
+            <div class="aspiral"><h5>.</h5></div>
+            </div>
+            
+      </div>
+</div>
+
+    <script src="checklist.js"></script>
+    <script src="darkmode.js"></script>
+
+</body>
+</html>
