@@ -1,4 +1,4 @@
-# <center> To-do list </center>
+<h1 align="center"> To-do list </h1>
 
 
 
